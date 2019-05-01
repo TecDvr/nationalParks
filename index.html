@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <h1>National Park Search</h1>
+      <form id="searchForm">
+        <label for="searchState">Search State</label>
+        <input type="text" name="searchState" id="searchState" required>
+        <label for="maxResults">How Many Results?</label>
+        <input type="number" name="maxResults" id="maxResults" value="10">
+        <input type="submit" value="Search">
+      </form>
+      <section id="parkResults" class="hiddenList">
+        <h2>Parks in your state</h2>
+        <ul id="parkResultsList">
+        </ul>  
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
